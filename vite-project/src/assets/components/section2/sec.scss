@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'SpaceGrotesk';
+  src: url('../font/SpaceGrotesk-Regular.ttf');
+}
+
+.company{
+    width: 100%;
+    height: 273px;
+    background-color: #F7F6FF;
+    display: flex;
+    justify-content: center;
+
+    .pred{
+        width: 80%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        .zag{
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            h1{
+                font-family: 'SpaceGrotesk', sans-serif;
+                color: #73779C;
+                font-size: 22px;
+            }
+        }
+
+        .brand{
+            width: 100%;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+}
+

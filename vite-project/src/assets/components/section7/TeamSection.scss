@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../font/SpaceGrotesk-Regular.ttf');
+}
+.sec6-wrap {
+  width: 100%;
+  min-height: 95vh;
+  background: #F7F6FF;
+  display: grid;
+  place-content: center;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.sec6 {
+  width: 1122px;
+  display: grid;
+  row-gap: 55px;
+}
+
+.title-box {
+  display: grid;
+  row-gap: 14px;
+  text-align: center;
+
+  h2 {
+    color: #060336;
+    font-size: 46px;
+    font-weight: 700;
+  }
+
+  p {
+    color: #757589;
+    font-size: 15px;
+  }
+}
+
+.slider-box {
+  width: 1122px;
+  position: relative;
+}
+
+.window {
+  width: 1122px;
+  overflow: hidden;
+}
+
+.track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 350px;
+  column-gap: 36px;
+  transition: transform 0.45s ease;
+}
+
+.card {
+  width: 350px;
+  display: grid;
+  row-gap: 18px;
+
+  .photo {
+    width: 350px;
+    height: 350px;
+    border-radius: 14px;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.bot {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.who {
+  display: grid;
+  row-gap: 4px;
+
+  h3 {
+    color: #060336;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  span {
+    color: #757589;
+    font-size: 13px;
+  }
+}
+
+.soc {
+  height: 30px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  cursor: pointer;
+}
+
+.nav-circle {
+  position: absolute;
+  left: 342px;
+  top: 149px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #F7F6FF;
+  border: none;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 8px;
+  place-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 5;
+  box-shadow: 0 4px 15px rgba(6, 3, 54, 0.08);
+
+  img {
+    width: 7px;
+    height: 12px;
+    object-fit: contain;
+    display: block;
+  }
+
+  .arr-right {
+    transform: rotate(180deg);
+  }
+}

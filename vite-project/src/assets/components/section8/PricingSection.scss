@@ -1,0 +1,131 @@
+@font-face{
+  font-family: 'Space Grotesk';
+  src: url('../font/SpaceGrotesk-Regular.ttf');
+}
+
+.sec7-wrap{
+  width: 100%;
+  min-height: 100vh;
+  background: #F7F6FF;
+  display: grid;
+  place-content: center;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.sec7{
+  width: 1122px;
+  display: grid;
+  row-gap: 55px;
+}
+
+.head{
+  display: grid;
+  row-gap: 14px;
+  text-align: center;
+
+  h2{
+    color: #060336;
+    font-size: 46px;
+    font-weight: 700;
+  }
+
+  p{
+    color: #757589;
+    font-size: 15px;
+  }
+}
+
+.plans{
+  display: grid;
+  grid-template-columns: repeat(3, 354px);
+  column-gap: 30px;
+}
+
+.plan-card{
+  width: 354px;
+  height: 530px;
+  border-radius: 12px;
+  border: 1.5px solid #E6E4F0;
+  background: transparent;
+  display: grid;
+  place-items: center;
+
+  &.active{
+    background: #FFFFFF;
+    border-color: transparent;
+    box-shadow: 0 20px 45px rgba(6, 3, 54, 0.05);
+  }
+}
+
+.card-body{
+  width: 314px;
+  height: 486px;
+  display: grid;
+  grid-template-rows: 132px 72px 1fr 94px;
+  align-items: center;
+  justify-items: center;
+}
+
+.banner{
+  width: 314px;
+  height: 132px;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+.price{
+  color: #060336;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.features-list{
+  width: 260px;
+  height: 100%;
+  border-top: 1px solid #E6E4F0;
+  border-bottom: 1px solid #E6E4F0;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  row-gap: 14px;
+
+  span{
+    color: #555568;
+    font-size: 15px;
+  }
+}
+
+.bot-part{
+  width: 260px;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 46px;
+  align-items: center;
+  justify-items: center;
+
+  .ver{
+    color: #060336;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+.sub-btn{
+  width: 260px;
+  height: 46px;
+  border-radius: 6px;
+  border: 1px solid #E6E4F0;
+  background: #FFFFFF;
+  color: #060336;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+
+  &.blue{
+    background: #4F45EB;
+    color: #FFFFFF;
+    border: none;
+  }
+}

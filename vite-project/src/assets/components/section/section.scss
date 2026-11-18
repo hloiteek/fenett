@@ -1,0 +1,127 @@
+@font-face{
+  font-family: 'SpaceGrotesk';
+  src: url('../font/SpaceGrotesk-Regular.ttf');
+}
+
+
+.sec1-wrap {
+  width: 100%;
+  min-height: 85vh;
+  background: #F7F6FF;
+  display: grid;
+  place-content: center;
+  font-family: 'SpaceGrotesk';
+  overflow: hidden;
+}
+
+.sec1 {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 540px 1fr;
+  column-gap: 50px;
+  align-items: center;
+}
+
+.hero-text {
+  display: grid;
+  row-gap: 28px;
+  align-content: center;
+
+  h1 {
+    color: #060336;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: -0.5px;
+    font-family: 'SpaceGrotesk';
+  }
+
+  p {
+    color: #757589;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'SpaceGrotesk';
+  }
+}
+
+.mail-form {
+  width: 520px;
+  height: 68px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 15px 35px rgba(6, 3, 54, 0.05);
+  display: grid;
+  grid-template-columns: 22px 1fr 145px 10px;
+  align-items: center;
+
+  &::before,
+  &::after {
+    content: '';
+  }
+
+  input {
+    border: none;
+    outline: none;
+    font-family: 'SpaceGrotesk';
+    font-size: 15px;
+    color: #060336;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+
+    &::placeholder {
+      color: #9E9DAE;
+    }
+  }
+
+  button {
+    width: 145px;
+    height: 48px;
+    background: #4F45EB;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    font-family: 'SpaceGrotesk';
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: #3c32d6;
+    }
+  }
+}
+
+.check-row {
+  display: grid;
+  grid-template-columns: 18px auto;
+  column-gap: 10px;
+  align-items: center;
+  width: fit-content;
+
+  img {
+    width: 18px;
+    height: 18px;
+    display: block;
+    object-fit: contain;
+  }
+
+  span {
+    color: #757589;
+    font-size: 14px;
+  }
+}
+
+.hero-pic {
+  display: grid;
+  justify-items: end;
+
+  img {
+    width: 100%;
+    max-width: 620px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+  }
+}
